@@ -1,68 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# A task tracker or management project (focused on MERN stack). MangoDB atlas used for database services. 
+# Key features of the project:-
+* user can register as an authorised individual . No two users can have same username.
+* forms with complete validation 
+* proper routing 
+* A user can track there previous entries(they can edit and delete the entries)
+* a user can create new tasks(verification is done that the user is same as the one who logged in)
+* one can check detailed info about a particular task(including timer for the current tasks,no timer for finished tasks)
+* a user can see current and finished tasks separately 
 
-## Available Scripts
+# How to operate database:-
 
-In the project directory, you can run:
+https://cloud.mongodb.com/v2/5ee214ba54e4ff013011de57#clusters
 
-### `npm start`
+# Commands used inside backend folder
+   # 1 CREATE A REACT FOLDER
+   * npx create-react-app REACT_PROJECT_NAME
+   # 2 MAKE A BACKEND FOLDER
+   * mkdir backend
+   * cd backend
+   # 3 INSIDE BACKEND FOLDER
+   * npm init -y
+   * npm install express cors mongoose dotenv
+   * npm install -g nodemon
+   # 4 RUN SERVER (WHILE YOU ARE INSIDE BACKEND FOLDER ON CMD)
+   * nodemon server
+   
+# Commands used in the parent/main folder (installing dependencies)
+   # 5 INSTALLING DEPENDENCIES
+   {NOTE:- as for backend we have used cmd ,same for react project open other cmd and inside the parent folder install the                  dependencies,which means we require two cmd's one for MongoDB and another for React}
+   * npm install bootstrap
+   * npm install react-router-dom
+   * npm install react-datepicker
+   * npm install axios
+   * npm i react-time-picker
+   * npm i react-compound-timer
+   * npm install --save particles-bg
+   * npm i react-bootstrap
+   # 6 RUNNING REACT PROJECT(WHILE YOU ARE INSIDE PARENT FOLDER ON SECOND CMD)
+   * npm start
+   
+# Dependencies installed
++ express@4.17.1
++ dotenv@8.2.0
++ cors@2.8.5
++ mongoose@5.9.18
++ nodemon@2.0.4
++ bootstrap@4.5.0
++ react-router-dom@5.2.0
++ react-datepicker@3.0.0
++ axios@0.19.2
++ react-time-picker@4.0.1
++ react-compound-timer@1.2.0
++ particles-bg@2.5.0
++ react-bootstrap@1.0.1
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
