@@ -8,10 +8,31 @@
 * one can check detailed info about a particular task(including timer for the current tasks,no timer for finished tasks)
 * a user can see current and finished tasks separately 
 
+
 # How to operate database:-
+   # 1 click on the link
+   * https://cloud.mongodb.com/v2/5ee214ba54e4ff013011de57#clusters
+   # 2 enter credentials
+   * username:- niharikasharma123@yahoo.in
+   * password:- niharikasharma
+   # 3 click on the drop box (just above "data storage" on top left,it is containing name of all the projects)
+   # 4 click on new project and write a project name -> click next -> create project
+   # 5 click on build a cluster-> choose shared cluster(its free)->click create a cluster
+   # 6 from providers choose "google cloud platform" and from region choose "mumbai" -> click on create cluster
+   # 7 when the cluster is built,click on connect-> click on "add your current IP address" -> add IP address 
+   # 8 Create a MongoDB User
+   * username :- niharikasharmaDB
+   * password :- niharikasharmaDBPASS
+   * click "create MongoDB user" -> click on "choose a connection method"
+   * choose "connect your application" -> copy the URL -> close
+   # create a .env file (inside backend folder) and write :-
+   * ATLAS_URI=copied_url
+   * for example:- ATLAS_URI=mongodb+srv://niharikasharmaDB:<password>@cluster0-hv56c.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority
+   * replace <password> with niharikasharmaDBPASS
+   * replace <dbname> with demo
 
-https://cloud.mongodb.com/v2/5ee214ba54e4ff013011de57#clusters
 
+   
 # Commands used inside backend folder
    # 1 CREATE A REACT FOLDER
    * npx create-react-app REACT_PROJECT_NAME
