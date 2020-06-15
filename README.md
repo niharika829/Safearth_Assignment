@@ -29,9 +29,9 @@
    * choose "connect your application" -> copy the URL -> close
    # create a .env file (inside backend folder) and write :-
    * ATLAS_URI=copied_url
-   * for example:- ATLAS_URI=mongodb+srv://niharikasharmaDB:<password>@cluster0-hv56c.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority
-   * replace <password> with niharikasharmaDBPASS
-   * replace <dbname> with demo
+   * for example:- ATLAS_URI=mongodb+srv://niharikasharmaDB:PASSWORD@cluster0-hv56c.gcp.mongodb.net/DBNAME?retryWrites=true&w=majority
+   * replace PASSWORD with niharikasharmaDBPASS
+   * replace DBNAME with demo
 
 
    
